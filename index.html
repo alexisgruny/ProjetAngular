@@ -48,40 +48,55 @@
 
   <!-- Top tendance -->
   <div class="container-fluid">
-  <h2 class="categorieTitle">Figurine top tendance</h2>
-  <div class="row justify-content-center">
+      <div class="row justify-content-center">
+  <h2 class="col-md-12">Figurine top tendance</h2>
+
   <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
      <img class="cardImg" src="{{article.img}}" height="200"/>
   <h3>{{article.price}}</h3>
   <h4>{{article.product}}</h4>
   <p>{{article.desc}}</p>
   <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
-
     </div>
   </div>
 
   <!-- Japonaise -->
-  <h2 class="categorieTitle">Figurine japonaise</h2>
-  <ul ng-repeat="article in articles" ng-if="article.type == 'weeb'">
-    <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price + ' '}}<img src="{{article.img}}" />
-      </article>
-    </li>
-  </ul>
+  <h2 class="row justify-content-center">Figurine japonaise</h2>
+  <div class="row justify-content-center">
+  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'weeb'">
+     <img class="cardImg" src="{{article.img}}" height="200"/>
+  <h3>{{article.price}}</h3>
+  <h4>{{article.product}}</h4>
+  <p>{{article.desc}}</p>
+  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+    </div>
+
+
+
   <!-- Marvel -->
-  <h2 class="categorieTitle">Figurine Marvel</h2>
-  <ul ng-repeat="article in articles" ng-if="article.type == 'marvel'">
-    <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}} <img src="{{article.img}}" />
-    </li>
-  </ul>
+  <h2 class="row justify-content-center">Figurine marvel</h2>
+  <div class="row justify-content-center">
+  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'marvel'">
+     <img class="cardImg" src="{{article.img}}" height="200"/>
+  <h3>{{article.price}}</h3>
+  <h4>{{article.product}}</h4>
+  <p>{{article.desc}}</p>
+  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+    </div>
+
   <!-- POP -->
-  <h2 class="categorieTitle">Figurine POP</h2>
-  <ul ng-repeat="article in articles" ng-if="article.type == 'pop'">
-    <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}} <img src="{{article.img}}" />
-    </li>
-  </ul>
+
+  <h2 class="row justify-content-center">Figurine pop</h2>
+  <div class="row justify-content-center">
+  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'pop'">
+     <img class="cardImg" src="{{article.img}}" height="200"/>
+  <h3>{{article.price}}</h3>
+  <h4>{{article.product}}</h4>
+  <p>{{article.desc}}</p>
+  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+    </div>
+
+
     </div>
     <script src="assets/js/script.js"></script>
 </body>
