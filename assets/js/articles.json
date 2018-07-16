@@ -3,139 +3,159 @@
 		"price": "51.33€",
 		"ref": "215647",
 		"desc": "Une figurine de Goku",
-		"type": "weeb"
+		"type": "weeb",
+    "img": "assets/img/goku.jpg"
 	},
 	{
 		"product": "Figurine Sasuke Susano",
 		"price": "97.97€",
 		"ref": "976541",
 		"desc": "Une figurine de sasuke le dark",
-		"type": "weeb"
+		"type": "weeb",
+    "img": "assets/img/sasuke1.jpg"
 	},
 	{
 		"product": "Figurine Banpresto One piece",
 		"price": "32.00€",
 		"ref": "467879",
 		"desc": "Une figurine de Banpresto de One piece",
-		"type": "weeb"
+		"type": "weeb",
+    "img": "assets/img/shank.jpg"
 	},
 	{
 		"product": "Figurine One piece Banpresto",
 		"price": "34.12€",
 		"ref": "267984",
-		"desc": "Une figurine de Banpresto en mode dark",
-		"type": "weeb"
+		"desc": "Une figurine de mihawk en mode dark",
+		"type": "weeb",
+    "img": "assets/img/mihawk1.jpg"
 	},
 	{
 		"product": "Figurine Bleach Posing Girl",
 		"price": "100.27€",
 		"ref": "065943",
 		"desc": "Une figurine de fille de Bleach",
-		"type": "weeb"
+		"type": "weeb",
+    "img": "assets/img/bleach1.jpg"
 	},
 	{
 		"product": "Figurine Link on the King of Red Lions",
 		"price": "399.99€",
 		"ref": "795349",
 		"desc": "Figurine haut de gamme de Link sur son bateau",
-		"type": "topTendance"
+		"type": "topTendance",
+    "img": "assets/img/link.jpg"
 	},
 	{
 		"product": "Figurine SnowTrooper",
 		"price": "129.95€",
 		"ref": "034267",
 		"desc": "Une figurine haut de gamme d'un SnowTrooper",
-		"type": "topTendance"
+		"type": "topTendance",
+    "img": "assets/img/stormTrooper.jpg"
 	},
 	{
 		"product": "Figurine Hunter ThreeA",
 		"price": "169.90€",
 		"ref": "67294",
 		"desc": "Figurine haut de gamme d'Hunter ThreeA",
-		"type": "topTendance"
+		"type": "topTendance",
+    "img": "assets/img/hunter.jpg"
 	},
 	{
 		"product": "Figurine Aerith Gainsborough",
 		"price": "149.90€",
 		"ref": "092034",
 		"desc": "Magnifique figurine de Aerith Gainsborough",
-		"type": "topTendance"
+		"type": "topTendance",
+    "img": "assets/img/aerith1.jpg"
 	},
 	{
 		"product": "Figurine Haruna Good Smile Company",
 		"price": "117.90€",
 		"ref": "319750",
 		"desc": "Une figurine haut de gamme de la magnifique Haruna",
-		"type": "topTendance"
+		"type": "topTendance",
+    "img": "assets/img/haruna.jpg"
 	},
 	{
 		"product": "Figurine POP Groot",
 		"price": "9.29€",
 		"ref": "006945",
 		"desc": "Très belle figurine pop de Groot",
-		"type": "Pop"
+		"type": "pop",
+    "img": "assets/img/groot.jpg"
 	},
 	{
 		"product": "Figurine POP Harry Potter",
 		"price": "9.99€",
 		"ref": "113645",
 		"desc": "Très belle figurine pop d'Harry Potter",
-		"type": "Pop"
+		"type": "pop",
+    "img": "assets/img/Harry.jpg"
 	},
 	{
 		"product": "Figurine POP One punch man",
 		"price": "13.23€",
 		"ref": "669745",
 		"desc": "Magnifique figurine du mythique one shotter",
-		"type": "Pop"
+		"type": "pop",
+    "img": "assets/img/onePunchMan.jpg"
 	},
 	{
 		"product": "Figurine POP Kratos de God of War",
 		"price": "9.67€",
 		"ref": "997462",
 		"desc": "Sublime figurine pop du dieu de la guerre Kratos",
-		"type": "Pop"
+		"type": "pop",
+    "img": "assets/img/kratos.jpeg"
 	},
 	{
 		"product": "Figurine POP Kakashi de Naruto",
 		"price": "19.27€",
 		"ref": "559745",
 		"desc": "Magnifique figurine POP du fameux Kakashi dans Naruto",
-		"type": "Pop"
+		"type": "pop",
+    "img": "assets/img/kakashi.jpg"
 	},
 	{
 		"product": "Figurine MARVEL de Black Panther",
 		"price": "14.99€",
 		"ref": "494513",
 		"desc": "Cette figurine de Black Panther d'une hauteur de 30cm vous fera vibrer !",
-		"type": "Marvel"
+		"type": "Marvel",
+    "img": "assets/img/blackPanther.jpg"
 	},
   {
 		"product": "Figurine MARVEL Thor",
 		"price": "45.00€",
 		"ref": "za484q",
 		"desc": "Cette magnifique figurine de Thor d'une hauteur 25cm ira à ravir sur votre bureau !",
-		"type": "Marvel"
+		"type": "marvel",
+    "img": "assets/img/thor.jpg"
 	},
 	{
 		"product": "Figurine MARVEL Iron Man",
 		"price": "24.90€",
 		"ref": "336323",
 		"desc": "Figurine d'Iron man",
-		"type": "Marvel"
+		"type": "marvel",
+    "img": "assets/img/ironMan.jpg"
 	},
 	{
 		"product": "Figurine MARVEL Hulk",
 		"price": "19.99€",
 		"ref": "TY5642",
 		"desc": "Figurine HULK",
-		"type": "Marvel"
+		"type": "marvel",
+    "img": "assets/img/hulk.jpg"
 	},
 	{
 		"product": "Figurine MARVEL Captain Falcon",
 		"price": "34.64€",
 		"ref": "OUI975",
 		"desc": "Figurine de Captain Falcon",
-		"type": "Marvel"
+		"type": "marvel",
+    "img": "assets/img/capitaineFalcon.jpg"
 	}
 ]
