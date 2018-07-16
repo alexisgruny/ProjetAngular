@@ -38,7 +38,7 @@
 		"price": "399.99€",
 		"ref": "795349",
 		"desc": "Figurine haut de gamme de Link sur son bateau",
-    "type": "topTendance"
+		"type": "topTendance"
 	},
 	{
 		"product": "Figurine SnowTrooper",
@@ -73,6 +73,69 @@
 		"price": "9.29€",
 		"ref": "006945",
 		"desc": "Très belle figurine pop de Groot",
-		"type": "pop"
+		"type": "Pop"
+	},
+	{
+		"product": "Figurine POP Harry Potter",
+		"price": "9.99€",
+		"ref": "113645",
+		"desc": "Très belle figurine pop d'Harry Potter",
+		"type": "Pop"
+	},
+	{
+		"product": "Figurine POP One punch man",
+		"price": "13.23€",
+		"ref": "669745",
+		"desc": "Magnifique figurine du mythique one shotter",
+		"type": "Pop"
+	},
+	{
+		"product": "Figurine POP Kratos de God of War",
+		"price": "9.67€",
+		"ref": "997462",
+		"desc": "Sublime figurine pop du dieu de la guerre Kratos",
+		"type": "Pop"
+	},
+	{
+		"product": "Figurine POP Kakashi de Naruto",
+		"price": "19.27€",
+		"ref": "559745",
+		"desc": "Magnifique figurine POP du fameux Kakashi dans Naruto",
+		"type": "Pop"
+	},
+	{
+		"product": "Figurine MARVEL de Black Panther",
+		"price": "14.99€",
+		"ref": "494513",
+		"desc": "Cette figurine de Black Panther d'une hauteur de 30cm vous fera vibrer !",
+		"type": "Marvel"
+	},
+  {
+		"product": "Figurine MARVEL Thor",
+		"price": "45.00€",
+		"ref": "za484q",
+		"desc": "Cette magnifique figurine de Thor d'une hauteur 25cm ira à ravir sur votre bureau !",
+		"type": "Marvel"
+	},
+	{
+		"product": "Figurine MARVEL Iron Man",
+		"price": "24.90€",
+		"ref": "336323",
+		"desc": "Figurine d'Iron man",
+		"type": "Marvel"
+	},
+	{
+		"product": "Figurine MARVEL Hulk",
+		"price": "19.99€",
+		"ref": "TY5642",
+		"desc": "Figurine HULK",
+		"type": "Marvel"
+	},
+	{
+		"product": "Figurine MARVEL Captain Falcon",
+		"price": "34.64€",
+		"ref": "OUI975",
+		"desc": "Figurine de Captain Falcon",
+		"type": "Marvel"
 	}
 ]
