@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr"  ng-app="routeApp" >
+<html lang="fr"  ng-app="articles" >
 <head>
   <meta charset="UTF-8">
   <title>angular bonus ex03</title>
@@ -7,8 +7,35 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div ng-view>
-  </div>
+  <h1 class="col-md-6 offset-3">FatMiniGurine</h1>
+  <!-- Top tendance -->
+  <h2 class="categorieTitle">Figurine top tendance</h2>
+    <ul ng-repeat="test in item">
+      <li ng-if="test.type == 'tendance'">
+        {{product + desc + price}}
+      </li>
+    </ul>
+  <!-- Japonaise -->
+  <h2 class="categorieTitle">Figurine japonaise</h2>
+  <ul ng-repeat="test in item">
+    <li ng-if="test.type == 'weeb'">
+      {{product + desc + price}}
+    </li>
+  </ul>
+  <!-- Marvel -->
+  <h2 class="categorieTitle">Figurine Marvel</h2>
+    <ul ng-repeat="test in item">
+      <li ng-if="test.type == 'weeb'">
+        {{product + desc + price}}
+      </li>
+    </ul>
+  <!-- POP -->
+  <h2 class="categorieTitle">Figurine POP</h2>
+    <ul ng-repeat="test in item">
+      <li ng-if="test.type == 'weeb'">
+        {{product + desc + price}}
+      </li>
+    </ul>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
   <script src="script.js"></script>
