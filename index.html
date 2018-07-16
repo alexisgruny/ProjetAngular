@@ -27,7 +27,7 @@
             <!--Liste de la navbar-->
       <ul class="navbar-nav">
         <li class="nav-item ml-5">
-          <a class="nav-link" href="#">Top tendances</a>
+          <a class="nav-link" href="#" onclick="modale()">Top tendances</a>
         </li>
         <li class="nav-item ml-5">
           <a class="nav-link" href="#">Weeb</a>
@@ -41,7 +41,30 @@
       </ul>
     </div>
   </nav><!--Fin de la navbar-->
+  <div id="aModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <section class="container">
+        <article class="well form-inline pull-left col-lg-5">
+          <legend>Contenu du panier</legend>
+          <table id="tableau" class="table">
+            <thead>
+              <tr>
+                <th>code du livre</th>
+                <th>Qte</th>
+                <th>Prix unitaire</th>
+                <th>Prix de la ligne</th>
+                <th>Supprimer</th>
+              </tr>
+            </thead>
+          </table>
+          <br><label>Prix du panier total</label> : <label id = "prixTotal"></label>
+          <label id = "nbreLignes" hidden>0</label>
+        </article>
+      </section>
+    </div>
 
 
 
