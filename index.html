@@ -1,43 +1,42 @@
 <!doctype html>
-<html lang="fr"  ng-app="articles" >
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>angular bonus ex03</title>
+  <title>FatMiniGurine</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body ng-app="content" >
   <h1 class="col-md-6 offset-3">FatMiniGurine</h1>
   <!-- Top tendance -->
   <h2 class="categorieTitle">Figurine top tendance</h2>
-    <ul ng-repeat="test in item">
-      <li ng-if="test.type == 'tendance'">
-        {{product + desc + price}}
-      </li>
-    </ul>
+  <ul ng-repeat="test in item">
+    <li ng-if="test.type == 'tendance'">
+      {{product + desc + price}}
+    </li>
+  </ul>
   <!-- Japonaise -->
   <h2 class="categorieTitle">Figurine japonaise</h2>
-  <ul ng-repeat="test in item">
-    <li ng-if="test.type == 'weeb'">
-      {{product + desc + price}}
+  <ul>
+    <li ng-repeat="test in item" ng-if="test.type == 'weeb'">
+      {{product}}
     </li>
   </ul>
   <!-- Marvel -->
   <h2 class="categorieTitle">Figurine Marvel</h2>
-    <ul ng-repeat="test in item">
-      <li ng-if="test.type == 'weeb'">
-        {{product + desc + price}}
-      </li>
-    </ul>
+  <ul ng-repeat="test in item">
+    <li ng-if="test.type == 'marvel'">
+      {{product + desc + price}}
+    </li>
+  </ul>
   <!-- POP -->
   <h2 class="categorieTitle">Figurine POP</h2>
-    <ul ng-repeat="test in item">
-      <li ng-if="test.type == 'weeb'">
-        {{product + desc + price}}
-      </li>
-    </ul>
+  <ul ng-repeat="test in item">
+    <li ng-if="test.type == 'pop'">
+      {{product + desc + price}}
+    </li>
+  </ul>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

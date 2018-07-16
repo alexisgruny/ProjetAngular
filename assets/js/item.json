@@ -1,75 +1,9 @@
 [
   {
-    "category":"weeb"
-    [{
-      "product":"Figurine Goku Budoukai",
-      "price":"51.33€",
-      "ref":"215647",
-      "desc":"Une figurine de Goku",
-      "type":"weeb"
-    },
-    {
-      "product":"Figurine Sasuke Susano",
-      "price":"97.97€",
-      "ref":"976541",
-      "desc":"Une figurine de sasuke le dark",
-      "type":"weeb"
-    },
-    {
-      "product":"Figurine Banpresto One piece",
-      "price":"32.00€",
-      "ref":"467879",
-      "desc": "Une figurine de Banpresto de One piece",
-      "type":"weeb"
-    },
-    {
-      "product":"Figurine One piece Banpresto",
-      "price":"34.12€",
-      "ref":"267984",
-      "desc":"Une figurine de Banpresto en mode dark",
-      "type":"weeb"
-    },
-    {
-      "product":"Figurine Bleach Posing Girl",
-      "price":"100.27€",
-      "ref":"065943",
-      "desc":"Une figurine de fille de Bleach",
-      "type":"weeb"
-    }
-  ]
-},
-{
-  "category":"top tendance";
-  "lists":[{
-    "product":"Figurine Link on the King of Red Lions",
-    "price":"399.99€",
-    "ref":"795349",
-    "desc":"Figurine haut de gamme de Link sur son bateau"
+    "product":"Figurine Goku Budoukai",
+    "price":"51.33€",
+    "ref":"215647",
+    "desc":"Une figurine de Goku",
+    "type":"weeb"
   }
-  {
-    "product":"Figurine SnowTrooper",
-    "price":"129.95€",
-    "ref":"034267",
-    "desc":"Une figurine haut de gamme d'un SnowTrooper"
-  }
-  {
-    "product":"Figurine Hunter ThreeA",
-    "price":"169.90€",
-    "ref":"67294",
-    "desc":"Figurine haut de gamme d'Hunter ThreeA"
-  }
-  {
-    "product":"Figurine Aerith Gainsborough",
-    "price":"149.90€",
-    "ref":"092034",
-    "desc":"Magnifique figurine de Aerith Gainsborough"
-  }
-  {
-    "product":"Figurine Haruna Good Smile Company",
-    "price":"117.90€",
-    "ref":"319750",
-    "desc":"Une figurine haut de gamme de la magnifique Haruna"
-  }
-]
-}
 ]
