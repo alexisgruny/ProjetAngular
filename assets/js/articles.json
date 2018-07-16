@@ -1,0 +1,78 @@
+[{
+		"product": "Figurine Goku Budoukai",
+		"price": "51.33€",
+		"ref": "215647",
+		"desc": "Une figurine de Goku",
+		"type": "weeb"
+	},
+	{
+		"product": "Figurine Sasuke Susano",
+		"price": "97.97€",
+		"ref": "976541",
+		"desc": "Une figurine de sasuke le dark",
+		"type": "weeb"
+	},
+	{
+		"product": "Figurine Banpresto One piece",
+		"price": "32.00€",
+		"ref": "467879",
+		"desc": "Une figurine de Banpresto de One piece",
+		"type": "weeb"
+	},
+	{
+		"product": "Figurine One piece Banpresto",
+		"price": "34.12€",
+		"ref": "267984",
+		"desc": "Une figurine de Banpresto en mode dark",
+		"type": "weeb"
+	},
+	{
+		"product": "Figurine Bleach Posing Girl",
+		"price": "100.27€",
+		"ref": "065943",
+		"desc": "Une figurine de fille de Bleach",
+		"type": "weeb"
+	},
+	{
+		"product": "Figurine Link on the King of Red Lions",
+		"price": "399.99€",
+		"ref": "795349",
+		"desc": "Figurine haut de gamme de Link sur son bateau",
+    "type": "topTendance"
+	},
+	{
+		"product": "Figurine SnowTrooper",
+		"price": "129.95€",
+		"ref": "034267",
+		"desc": "Une figurine haut de gamme d'un SnowTrooper",
+		"type": "topTendance"
+	},
+	{
+		"product": "Figurine Hunter ThreeA",
+		"price": "169.90€",
+		"ref": "67294",
+		"desc": "Figurine haut de gamme d'Hunter ThreeA",
+		"type": "topTendance"
+	},
+	{
+		"product": "Figurine Aerith Gainsborough",
+		"price": "149.90€",
+		"ref": "092034",
+		"desc": "Magnifique figurine de Aerith Gainsborough",
+		"type": "topTendance"
+	},
+	{
+		"product": "Figurine Haruna Good Smile Company",
+		"price": "117.90€",
+		"ref": "319750",
+		"desc": "Une figurine haut de gamme de la magnifique Haruna",
+		"type": "topTendance"
+	},
+	{
+		"product": "Figurine POP Groot",
+		"price": "9.29€",
+		"ref": "006945",
+		"desc": "Très belle figurine pop de Groot",
+		"type": "pop"
+	}
+]
