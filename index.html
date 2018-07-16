@@ -26,14 +26,14 @@
   <h2 class="categorieTitle">Figurine top tendance</h2>
   <ul ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
     <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}}
+      {{article.product + ' ' + article.desc + ' ' + article.price}} <img src="{{article.img}}" />
     </li>
   </ul>
   <!-- Japonaise -->
   <h2 class="categorieTitle">Figurine japonaise</h2>
   <ul ng-repeat="article in articles" ng-if="article.type == 'weeb'">
     <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}}
+      {{article.product + ' ' + article.desc + ' ' + article.price + ' '}}<img src="{{article.img}}" />
       </article>
     </li>
   </ul>
@@ -41,14 +41,14 @@
   <h2 class="categorieTitle">Figurine Marvel</h2>
   <ul ng-repeat="article in articles" ng-if="article.type == 'marvel'">
     <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}}
+      {{article.product + ' ' + article.desc + ' ' + article.price}} <img src="{{article.img}}" />
     </li>
   </ul>
   <!-- POP -->
   <h2 class="categorieTitle">Figurine POP</h2>
   <ul ng-repeat="article in articles" ng-if="article.type == 'pop'">
     <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}}
+      {{article.product + ' ' + article.desc + ' ' + article.price}} <img src="{{article.img}}" />
     </li>
   </ul>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
