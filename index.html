@@ -1,34 +1,65 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>FatMiniGurine</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <link rel="icon" href="assets/img/logo.png" />
+    <title>FatMiniGurine</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body ng-app="content" ng-controller="contentCtrl" >
   <!--Début de la navbar-->
-  <nav class="navbar navbar-inverse">
-    <!--Titre de la navbar-->
-    <div class="navbar-header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Titre de la navbar-->
     <a class="navbar-brand" href="#">FatMiniGurines</a>
-  </div>
-      <!--Liste de la navbar-->
-      <ul class="nav navbar-nav">
-        <li><a href"#">Top tendances</a></li>
-        <li><a href="#">Weeb</a></li>
-        <li><a href="#">Pop</a></li>
-        <li><a href="#">Marvel</a></li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+            <!--Liste de la navbar-->
+      <ul class="navbar-nav">
+        <li class="nav-item ml-5">
+          <a class="nav-link" href="#">Top tendances</a>
+        </li>
+        <li class="nav-item ml-5">
+          <a class="nav-link" href="#">Weeb</a>
+        </li>
+        <li class="nav-item ml-5">
+          <a class="nav-link" href="#">Pop</a>
+        </li>
+        <li class="nav-item ml-5">
+          <a class="nav-link " href="#">Marvel</a>
+        </li>
       </ul>
+    </div>
   </nav><!--Fin de la navbar-->
-  <h1 class="col-md-6 .offset-md-3">FatMiniGurine</h1>
+
+
+
+
+
   <!-- Top tendance -->
+  <div class="container-fluid">
   <h2 class="categorieTitle">Figurine top tendance</h2>
-  <ul ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
-    <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}} <img src="{{article.img}}" />
-    </li>
-  </ul>
+  <div class="row justify-content-center">
+  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
+     <img class="cardImg" src="{{article.img}}" height="200"/>
+  <h3>{{article.price}}</h3>
+  <h4>{{article.product}}</h4>
+  <p>{{article.desc}}</p>
+  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+
+    </div>
+  </div>
+
   <!-- Japonaise -->
   <h2 class="categorieTitle">Figurine japonaise</h2>
   <ul ng-repeat="article in articles" ng-if="article.type == 'weeb'">
@@ -51,7 +82,7 @@
       {{article.product + ' ' + article.desc + ' ' + article.price}} <img src="{{article.img}}" />
     </li>
   </ul>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-  <script src="assets/js/script.js"></script>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
