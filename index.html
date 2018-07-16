@@ -11,15 +11,15 @@
   <nav class="navbar navbar-inverse">
     <!--Titre de la navbar-->
     <div class="navbar-header">
-    <a class="navbar-brand" href="#">FatMiniGurines</a>
-  </div>
-      <!--Liste de la navbar-->
-      <ul class="nav navbar-nav">
-        <li><a href"#">Top tendances</a></li>
-        <li><a href="#">Weeb</a></li>
-        <li><a href="#">Pop</a></li>
-        <li><a href="#">Marvel</a></li>
-      </ul>
+      <a class="navbar-brand" href="#">FatMiniGurines</a>
+    </div>
+    <!--Liste de la navbar-->
+    <ul class="nav navbar-nav">
+      <li><a href="#">Top tendances</a></li>
+      <li><a href="#">Weeb</a></li>
+      <li><a href="#">Pop</a></li>
+      <li><a href="#">Marvel</a></li>
+    </ul>
   </nav><!--Fin de la navbar-->
   <h1 class="col-md-6 .offset-md-3">FatMiniGurine</h1>
   <!-- Top tendance -->
@@ -34,24 +34,23 @@
   <ul ng-repeat="article in articles" ng-if="article.type == 'weeb'">
     <li>
       {{article.product + ' ' + article.desc + ' ' + article.price}}
-      </article>
-    </li>
-  </ul>
-  <!-- Marvel -->
-  <h2 class="categorieTitle">Figurine Marvel</h2>
-  <ul ng-repeat="article in articles" ng-if="article.type == 'marvel'">
-    <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}}
-    </li>
-  </ul>
-  <!-- POP -->
-  <h2 class="categorieTitle">Figurine POP</h2>
-  <ul ng-repeat="article in articles" ng-if="article.type == 'pop'">
-    <li>
-      {{article.product + ' ' + article.desc + ' ' + article.price}}
-    </li>
-  </ul>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  </li>
+</ul>
+<!-- Marvel -->
+<h2 class="categorieTitle">Figurine Marvel</h2>
+<ul ng-repeat="article in articles" ng-if="article.type == 'Marvel'">
+  <li>
+    {{article.product + ' ' + article.desc + ' ' + article.price}}
+  </li>
+</ul>
+<!-- POP -->
+<h2 class="categorieTitle">Figurine POP</h2>
+<ul ng-repeat="article in articles" ng-if="article.type == 'Pop'">
+  <li>
+    {{article.product + ' ' + article.desc + ' ' + article.price}}
+  </li>
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
