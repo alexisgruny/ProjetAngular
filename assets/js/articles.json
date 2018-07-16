@@ -39,6 +39,13 @@
     "img": "assets/img/bleach1.jpg"
 	},
 	{
+		"product": "Figurine Jojo Dio",
+		"price": "24.99€",
+		"ref": "jojooui",
+		"desc": "Laissez-vous séduire par les magnifiques abdos",
+		"type": "weeb"
+	},
+	{
 		"product": "Figurine Link on the King of Red Lions",
 		"price": "399.99€",
 		"ref": "795349",
@@ -77,6 +84,13 @@
 		"desc": "Une figurine haut de gamme de la magnifique Haruna",
 		"type": "topTendance",
     "img": "assets/img/haruna.jpg"
+	},
+	{
+		"product": "Figurine haut de gamme de Superman",
+		"price": "2779.99€",
+		"ref": "insane",
+		"desc":"Incroyable figurine de Superman, très haut de gamme",
+		"type": "topTendance"
 	},
 	{
 		"product": "Figurine POP Groot",
@@ -119,6 +133,12 @@
     "img": "assets/img/kakashi.jpg"
 	},
 	{
+		"product": "Figurine POP Emmanuel Macron",
+		"price": "13.37€",
+		"ref": "president",
+		"desc": "HEY MANU",
+		"type": "Pop"
+	}, {
 		"product": "Figurine MARVEL de Black Panther",
 		"price": "14.99€",
 		"ref": "494513",
@@ -126,7 +146,7 @@
 		"type": "Marvel",
     "img": "assets/img/blackPanther.jpg"
 	},
-  {
+	{
 		"product": "Figurine MARVEL Thor",
 		"price": "45.00€",
 		"ref": "za484q",
@@ -155,6 +175,13 @@
 		"price": "34.64€",
 		"ref": "OUI975",
 		"desc": "Figurine de Captain Falcon",
+		"type": "Marvel"
+	},
+	{
+		"product": "Figurine MARVEL Rocket",
+		"price": "20.45€",
+		"ref": "123456",
+		"desc": "Figurine de rocket",
 		"type": "marvel",
     "img": "assets/img/capitaineFalcon.jpg"
 	}
