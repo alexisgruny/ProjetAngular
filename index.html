@@ -53,17 +53,21 @@
       <span class="close">&times;</span>
       <section class="container">
         <article class="well form-inline pull-left col-lg-5">
-          <legend>Contenu du panier</legend>
+          <legend>Votre caddie</legend>
           <table id="tableau" class="table">
             <thead>
               <tr>
-                <th>code du livre</th>
-                <th>Qte</th>
+                <th>Produit</th>
+                <th>description</th>
                 <th>Prix unitaire</th>
-                <th>Prix de la ligne</th>
                 <th>Supprimer</th>
               </tr>
             </thead>
+            <tbody >
+              <tr>
+              <td ng-repeat="basket in productBasket">{{basket}}</td>
+              <td ng-repeat="basket in descBasket">{{basket}}</td>
+              <td ng-repeat="basket in priceBasket">{{basket}}</td>
           </table>
           <br><label>Prix du panier total</label> : <label id = "prixTotal"></label>
           <label id = "nbreLignes" hidden>0</label>
@@ -71,17 +75,18 @@
       </section>
     </div>
   </div>
-  
+
   <!-- Top tendance -->
   <div class="container-fluid">
     <div class="row justify-content-center">
       <h2 class="col-md-12" id="topTendance">Figurine top tendance</h2>
-      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles track by $index" ng-if="article.type == 'topTendance'">
         <img class="cardImg" src="{{article.img}}" height="200"/>
         <h3>{{article.price}}</h3>
         <h4>{{article.product}}</h4>
         <p>{{article.desc}}</p>
-        <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+        <p>{{article.ref}}<p>
+        <button type="button" data-id="1" ng-click="sendArticles($index)" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
 
@@ -93,7 +98,7 @@
         <h3>{{article.price}}</h3>
         <h4>{{article.product}}</h4>
         <p>{{article.desc}}</p>
-        <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="2" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
       </div>
 
       <!-- Marvel -->
@@ -115,6 +120,7 @@
             <h3>{{article.price}}</h3>
             <h4>{{article.product}}</h4>
             <p>{{article.desc}}</p>
+            <p>{{article.ref}}<p>
             <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
           </div>
 
@@ -123,6 +129,5 @@
         <script src="assets/js/jquery-3.2.1.js"></script>
         <script src="assets/js/modal.js"></script>
         <script src="assets/js/app.js"></script>
-        <script src="assets/js/script.js"></script>
       </body>
       </html>
