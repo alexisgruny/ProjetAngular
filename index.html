@@ -51,30 +51,22 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <section class="container">
-        <article class="well form-inline pull-left col-lg-5">
-          <legend>Votre caddie</legend>
-          <table id="tableau" class="table">
-            <thead>
-              <tr>
-                <th>Produit</th>
-                <th>description</th>
-                <th>Prix unitaire</th>
-                <th>Supprimer</th>
-              </tr>
-            </thead>
-            <tbody >
-              <tr>
-              <td ng-repeat="basket in productBasket">{{basket}}</td>
-              <td ng-repeat="basket in descBasket">{{basket}}</td>
-              <td ng-repeat="basket in priceBasket">{{basket}}</td>
-          </table>
-          <br><label>Prix du panier total</label> : <label id = "prixTotal"></label>
-          <label id = "nbreLignes" hidden>0</label>
-        </article>
-      </section>
+          <div class="col-md-4 offset-4">Votre caddie</div>
+          <div class="row">
+                <div class="col-md-2 offset-1">Produit</div>
+                <div class="col-md-2">description</div>
+                <div class="col-md-2">Prix unitaire</div>
+                <div class="col-md-2">prix total</div>
+                <div class="col-md-2">Supprimer</div>
+              </div>
+              <div class="row" ng-repeat="cart in basket">
+              <div class="col-md-2 offset-1">{{cart.product}}</div>
+              <div class="col-md-2">{{cart.desc}}</div>
+              <div class="col-md-2">{{cart.price}}</div>
+              <div class="col-md-2">{{prixTotal | number : 2}}</div>
     </div>
   </div>
+</div>
 
   <!-- Top tendance -->
   <div class="container-fluid">
