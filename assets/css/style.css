@@ -2,6 +2,10 @@
 h3, h4, p{
   text-align: center;
 }
+h1{
+  font-family: 'Bangers', cursive;
+    font-size: 50px;
+}
 .cardImg{
   display: flex;
   margin:auto;
@@ -19,4 +23,39 @@ h3, h4, p{
 }
 #promo1{
 background-color: rgba(255,255,255,0.8);
+}
+/* modale BG */
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 50px;
+   width: 100%;
+   height: 100%;
+
+}
+
+/* Modal box */
+.modal-content {
+  background-color: rgba(237, 225, 193, 1);
+   margin: 10% auto;
+   padding: 10px;
+   border: 1px solid #888;
+   width: 80%;
+   background: url("../img/waouh.gif");
+}
+
+/* Close Button */
+.close {
+   color: grey;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+  /* close hover and focus */
+.close:hover, .close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
 }

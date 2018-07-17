@@ -20,5 +20,5 @@ items.controller('contentCtrl',['$scope', '$http', function( $scope, $http) {
     for(var key in $scope.basket){
     $scope.prixTotal += $scope.basket[key].price;
   }
-  }
+};
 }]);
