@@ -20,3 +20,26 @@ h3, h4, p{
 #promo1{
 background-color: rgba(255,255,255,0.8);
 }
+#marvel{  background: url("../img/banniereMarvel.jpg") no-repeat;
+  background-size: cover;
+  font-size: 7em;
+  color: transparent;
+}
+#pop{  background: url("../img/bannierepop.png") repeat-x;
+background-size: contain;
+  font-size: 7em;
+  color: transparent;
+}
+#japonaise{  background: url("../img/banniereJ.png") no-repeat;
+  background-size: cover;
+  font-size: 7em;
+  color: transparent;
+}
+#topTendance{  background: url("../img/banniereT.gif") repeat-x;
+background-size: contain;
+  font-size: 7em;
+  color: transparent;
+}
+body{
+  background-image: url("../img/confetti.gif");
+}

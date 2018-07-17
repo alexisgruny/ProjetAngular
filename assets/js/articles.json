@@ -136,7 +136,7 @@
 	},
 	{
 		"product": "Figurine POP  Mickey",
-		"price": "13.37€",
+		"price": 13.37,
 		"ref": "president",
 		"desc": "Sublime figurine pop de Mickey",
 		"type": "pop",
@@ -146,7 +146,7 @@
 		"price": 14.99,
 		"ref": "18",
 		"desc": "Figurine de Black Panther !",
-		"type": "Marvel",
+		"type": "marvel",
     "img": "assets/img/blackPanther.jpg"
 	},
 	{
@@ -187,11 +187,11 @@
 		"ref": "23",
 		"desc": "Figurine de rocket",
 		"type": "marvel",
-    "img": "assets/img/capitaineFalcon.jpg"
+    "img": "assets/img/rocket.jpg"
 	},
 	{
 	"product": "Figurine Mickael",
-	"price": "20.45€",
+	"price": 20.45,
 	"ref": "123456",
 	"desc": "Figurine de Mickael",
 	"type": "vente1",

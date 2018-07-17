@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" />
+      <script src="assets/js/jquery-3.2.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="icon" href="assets/img/logoo.png" />
@@ -69,7 +70,7 @@
 
 <!--Promo-->
   <div class="container-fluid">
-    <div id="promo"class="row justify-content-center">
+    <div id="promo" class="row justify-content-center">
 <div id="promo1" class="col-md-3 p-3" ng-repeat="article in articles" ng-if="article.type == 'vente1'">
    <img class="cardImg border border-warning" src="{{article.img}}" height="350" />
 <h3>{{article.price}}</h3>
@@ -82,7 +83,7 @@
   <!-- Top tendance -->
 
 
-  <h2 class="row justify-content-center">Top tendance</h2>
+  <h2 id="topTendance" class="row justify-content-center p-4">.</h2>
       <div class="row justify-content-center">
   <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
      <img class="cardImg" src="{{article.img}}" height="250"/>
@@ -94,7 +95,7 @@
   </div>
 
   <!-- Japonaise -->
-  <h2 class="row justify-content-center">Japonais</h2>
+  <h2 id="japonaise" class="row justify-content-center p-5">.</h2>
   <div class="row justify-content-center">
   <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'weeb'">
      <img class="cardImg" src="{{article.img}}" height="250"/>
@@ -109,7 +110,7 @@
 
   <!--Marvel-->
 
-  <h2 class="row justify-content-center">Marvel</h2>
+  <h2 id="marvel" class="row justify-content-center p-5">.</h2>
   <div class="row justify-content-center">
   <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'marvel'">
      <img class="cardImg" src="{{article.img}}" height="250"/>
@@ -119,9 +120,9 @@
   <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-info w-100">AJOUTER AU PANIER</button>
     </div>
   </div>
+<!--pop-->
 
-
-  <h2 class="row justify-content-center">Pop</h2>
+  <h2 id="pop" class="row justify-content-center p-4">.</h2>
   <div class="row justify-content-center">
   <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'pop'">
      <img class="cardImg" src="{{article.img}}" height="250"/>
@@ -133,7 +134,7 @@
 </div>
 
     </div>
-    <script src="assets/js/jquery-3.2.1.js"></script>
+
     <script src="assets/js/modal.js"></script>
     <script src="assets/js/app.js"></script>
 
