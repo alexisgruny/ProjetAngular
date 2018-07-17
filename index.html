@@ -24,19 +24,19 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-            <!--Liste de la navbar-->
+      <!--Liste de la navbar-->
       <ul class="navbar-nav">
         <li class="nav-item ml-5">
-          <a class="nav-link" href="#" onclick="modale()">Top tendance</a>
+          <a class="nav-link" href="#topTendance">Top tendance</a>
         </li>
         <li class="nav-item ml-5">
-          <a class="nav-link" href="#">Japonais</a>
+          <a class="nav-link" href="#japonaise">Japonaise</a>
         </li>
         <li class="nav-item ml-5">
-          <a class="nav-link" href="#">Pop</a>
+          <a class="nav-link" href="#pop">Pop</a>
         </li>
         <li class="nav-item ml-5">
-          <a class="nav-link " href="#">Marvel</a>
+          <a class="nav-link " href="#marvel">Marvel</a>
         </li>
       </ul>
     </div>
@@ -49,25 +49,21 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <section class="container">
-        <article class="well form-inline pull-left col-lg-5">
-          <legend>Contenu du panier</legend>
-          <table id="tableau" class="table">
-            <thead>
-              <tr>
-                <th>code du livre</th>
-                <th>Qte</th>
-                <th>Prix unitaire</th>
-                <th>Prix de la ligne</th>
-                <th>Supprimer</th>
-              </tr>
-            </thead>
-          </table>
-          <br><label>Prix du panier total</label> : <label id = "prixTotal"></label>
-          <label id = "nbreLignes" hidden>0</label>
-        </article>
-      </section>
+          <div class="col-md-4 offset-4">Votre caddie</div>
+          <div class="row">
+                <div class="col-md-2 offset-1">Produit</div>
+                <div class="col-md-2">description</div>
+                <div class="col-md-2">Prix unitaire</div>
+                <div class="col-md-2">prix total</div>
+                <div class="col-md-2">Supprimer</div>
+              </div>
+              <div class="row" ng-repeat="cart in basket">
+              <div class="col-md-2 offset-1">{{cart.product}}</div>
+              <div class="col-md-2">{{cart.desc}}</div>
+              <div class="col-md-2">{{cart.price}}</div>
+              <div class="col-md-2">{{prixTotal | number : 2}}</div>
     </div>
+  </div>
   </div>
 
 
@@ -123,8 +119,6 @@
   <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-info w-100">AJOUTER AU PANIER</button>
     </div>
   </div>
-
-  <!-- POP -->
 
 
   <h2 class="row justify-content-center">Pop</h2>
