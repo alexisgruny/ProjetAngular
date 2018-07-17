@@ -4,7 +4,6 @@ var items = angular.module('content', []);
 items.run(['$rootScope', function($rootScope) {
   $rootScope.basket = [];
   $rootScope.prixTotal = 0;
-
 }]);
 //Déclaration du controlleur
 items.controller('contentCtrl',['$scope', '$http', function( $scope, $http) {
@@ -12,7 +11,6 @@ items.controller('contentCtrl',['$scope', '$http', function( $scope, $http) {
   $http.get('assets/js/articles.json')
   .then(function(res) {
   $scope.articles = res.data;
-
   });
   $scope.sendArticles = function(index) {
     $scope.basket.push($scope.articles[index]);
@@ -20,5 +18,9 @@ items.controller('contentCtrl',['$scope', '$http', function( $scope, $http) {
     for(var key in $scope.basket){
     $scope.prixTotal += $scope.basket[key].price;
   }
-};
+  }
+  $scope.deletArticles = function(index) {
+    $scope.basket.splice(index, 1);
+    $scope.prixTotal -= $scope.basket[index].price;
+  }
 }]);
