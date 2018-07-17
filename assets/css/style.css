@@ -8,9 +8,15 @@ h3, h4, p{
 }
 .navbar-brand, .navbar, h2{
   font-family: 'Bangers', cursive;
-    font-size: 2em;
-
+    font-size: 1.7em;
 }
 .fas{
   color: white;
+}
+#promo{
+  background: url("../img/bannierePromo.jpg") no-repeat;
+  background-size: cover;
+}
+#promo1{
+background-color: rgba(255,255,255,0.8);
 }
