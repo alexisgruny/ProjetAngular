@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/jquery-3.2.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="icon" href="assets/img/logoo.png" />
@@ -18,7 +19,7 @@
   <!--Début de la navbar-->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!--Titre de la navbar-->
+    <!--Titre de la navbar-->
     <a class="navbar-brand" href="#"> <img src="assets/img/logo.png" width="60" /> FATMINIGURINE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -40,7 +41,7 @@
         </li>
       </ul>
     </div>
-    <button type="button" class="btn btn-secondary btn-lg fas fa-shopping-cart"></button>
+    <button type="button" onclick="modale()" class="btn btn-secondary btn-lg fas fa-shopping-cart"></button>
 
   </nav><!--Fin de la navbar-->
 
@@ -49,93 +50,92 @@
     <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-          <div class="col-md-4 offset-4">Votre caddie</div>
-          <div class="row">
-                <div class="col-md-2 offset-1">Produit</div>
-                <div class="col-md-2">description</div>
-                <div class="col-md-2">Prix unitaire</div>
-                <div class="col-md-2">prix total</div>
-                <div class="col-md-2">Supprimer</div>
-              </div>
-              <div class="row" ng-repeat="cart in basket">
-              <div class="col-md-2 offset-1">{{cart.product}}</div>
-              <div class="col-md-2">{{cart.desc}}</div>
-              <div class="col-md-2">{{cart.price}}</div>
-              <div class="col-md-2">{{prixTotal | number : 2}}</div>
+      <div class="col-md-4 offset-4">Votre caddie</div>
+      <div class="row">
+        <div class="col-md-2 offset-1">Produit</div>
+        <div class="col-md-2">description</div>
+        <div class="col-md-2">Prix unitaire</div>
+        <div class="col-md-2">prix total</div>
+        <div class="col-md-2">Supprimer</div>
+      </div>
+      <div class="row" ng-repeat="cart in basket track by $index">
+        <div class="col-md-2 offset-1">{{cart.product}}</div>
+        <div class="col-md-2">{{cart.desc}}</div>
+        <div class="col-md-2">{{cart.price}}</div>
+        <div class="col-md-2">{{prixTotal | number : 2}}</div>
+      </div>
     </div>
   </div>
-  </div>
 
 
-<!--Promo-->
+  <!--Promo-->
   <div class="container-fluid">
     <div id="promo"class="row justify-content-center">
-<div id="promo1" class="col-md-3 p-3" ng-repeat="article in articles" ng-if="article.type == 'vente1'">
-   <img class="cardImg border border-warning" src="{{article.img}}" height="350" />
-<h3>{{article.price}}</h3>
-<h4>{{article.product}}</h4>
-<p>{{article.desc}}</p>
-<button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-warning font-weight-bold w-100">AJOUTER AU PANIER</button>
+      <div id="promo1" class="col-md-3 p-3" ng-repeat="(index, article) in articles" ng-if="article.type == 'vente1'">
+        <img class="cardImg border border-warning" src="{{article.img}}" height="350" />
+        <h3>{{article.price}}</h3>
+        <h4>{{article.product}}</h4>
+        <p>{{article.desc}}</p>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-warning font-weight-bold w-100">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
+    <!-- Top tendance -->
+
+
+    <h2 class="row justify-content-center">Top tendance</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'topTendance'">
+        <img class="cardImg" src="{{article.img}}" height="250"/>
+        <h3>{{article.price}}</h3>
+        <h4>{{article.product}}</h4>
+        <p>{{article.desc}}</p>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-success w-100">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
+    <!-- Japonaise -->
+    <h2 class="row justify-content-center">Japonais</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'weeb'">
+        <img class="cardImg" src="{{article.img}}" height="250"/>
+        <h3>{{article.price}}</h3>
+        <h4>{{article.product}}</h4>
+        <p>{{article.desc}}</p>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-secondary w-100">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
+
+
+    <!--Marvel-->
+
+    <h2 class="row justify-content-center">Marvel</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'marvel'">
+        <img class="cardImg" src="{{article.img}}" height="250"/>
+        <h3>{{article.price}}</h3>
+        <h4>{{article.product}}</h4>
+        <p>{{article.desc}}</p>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-info w-100">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
+
+    <h2 class="row justify-content-center">Pop</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'pop'">
+        <img class="cardImg" src="{{article.img}}" height="250"/>
+        <h3>{{article.price}}</h3>
+        <h4>{{article.product}}</h4>
+        <p>{{article.desc}}</p>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-dark w-100">AJOUTER AU PANIER</button>
+      </div>
+    </div>
+
   </div>
-</div>
-
-  <!-- Top tendance -->
-
-
-  <h2 class="row justify-content-center">Top tendance</h2>
-      <div class="row justify-content-center">
-  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
-     <img class="cardImg" src="{{article.img}}" height="250"/>
-  <h3>{{article.price}}</h3>
-  <h4>{{article.product}}</h4>
-  <p>{{article.desc}}</p>
-  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-success w-100">AJOUTER AU PANIER</button>
-    </div>
-  </div>
-
-  <!-- Japonaise -->
-  <h2 class="row justify-content-center">Japonais</h2>
-  <div class="row justify-content-center">
-  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'weeb'">
-     <img class="cardImg" src="{{article.img}}" height="250"/>
-  <h3>{{article.price}}</h3>
-  <h4>{{article.product}}</h4>
-  <p>{{article.desc}}</p>
-  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-secondary w-100">AJOUTER AU PANIER</button>
-    </div>
-  </div>
-
-
-
-  <!--Marvel-->
-
-  <h2 class="row justify-content-center">Marvel</h2>
-  <div class="row justify-content-center">
-  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'marvel'">
-     <img class="cardImg" src="{{article.img}}" height="250"/>
-  <h3>{{article.price}}</h3>
-  <h4>{{article.product}}</h4>
-  <p>{{article.desc}}</p>
-  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-info w-100">AJOUTER AU PANIER</button>
-    </div>
-  </div>
-
-
-  <h2 class="row justify-content-center">Pop</h2>
-  <div class="row justify-content-center">
-  <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'pop'">
-     <img class="cardImg" src="{{article.img}}" height="250"/>
-  <h3>{{article.price}}</h3>
-  <h4>{{article.product}}</h4>
-  <p>{{article.desc}}</p>
-  <button type="button" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-dark w-100">AJOUTER AU PANIER</button>
-    </div>
-</div>
-
-    </div>
-    <script src="assets/js/jquery-3.2.1.js"></script>
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/app.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/app.js"></script>
 
 </body>
 </html>

@@ -16,6 +16,7 @@ items.controller('contentCtrl',['$scope', '$http', function( $scope, $http) {
   });
   $scope.sendArticles = function(index) {
     $scope.basket.push($scope.articles[index]);
+    $scope.prixTotal = 0;
     for(var key in $scope.basket){
     $scope.prixTotal += $scope.basket[key].price;
   }
