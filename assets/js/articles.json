@@ -1,7 +1,7 @@
 [{
 		"product": "Figurine Goku Budoukai",
 		"price": "51.33€",
-		"ref": "215647",
+		"ref": "1",
 		"desc": "Une figurine de Goku",
 		"type": "weeb",
     "img": "assets/img/goku.jpg"
@@ -9,7 +9,7 @@
 	{
 		"product": "Figurine Sasuke Susano",
 		"price": "97.97€",
-		"ref": "976541",
+		"ref": "2",
 		"desc": "Une figurine de sasuke le dark",
 		"type": "weeb",
     "img": "assets/img/sasuke1.jpg"
@@ -17,7 +17,7 @@
 	{
 		"product": "Figurine Banpresto One piece",
 		"price": "32.00€",
-		"ref": "467879",
+		"ref": "3",
 		"desc": "Une figurine de Banpresto de One piece",
 		"type": "weeb",
     "img": "assets/img/shank.jpg"
@@ -25,7 +25,7 @@
 	{
 		"product": "Figurine One piece Banpresto",
 		"price": "34.12€",
-		"ref": "267984",
+		"ref": "4",
 		"desc": "Une figurine de mihawk en mode dark",
 		"type": "weeb",
     "img": "assets/img/mihawk1.jpg"
@@ -33,7 +33,7 @@
 	{
 		"product": "Figurine Bleach Posing Girl",
 		"price": "100.27€",
-		"ref": "065943",
+		"ref": "5",
 		"desc": "Une figurine de fille de Bleach",
 		"type": "weeb",
     "img": "assets/img/bleach1.jpg"
@@ -41,14 +41,14 @@
 	{
 		"product": "Figurine Jojo Dio",
 		"price": "24.99€",
-		"ref": "jojooui",
+		"ref": "6",
 		"desc": "Laissez-vous séduire par les magnifiques abdos",
 		"type": "weeb"
 	},
 	{
 		"product": "Figurine Link on the King of Red Lions",
 		"price": "399.99€",
-		"ref": "795349",
+		"ref": "7",
 		"desc": "Figurine haut de gamme de Link sur son bateau",
 		"type": "topTendance",
     "img": "assets/img/link.jpg"
@@ -56,7 +56,7 @@
 	{
 		"product": "Figurine SnowTrooper",
 		"price": "129.95€",
-		"ref": "034267",
+		"ref": "8",
 		"desc": "Une figurine haut de gamme d'un SnowTrooper",
 		"type": "topTendance",
     "img": "assets/img/stormTrooper.jpg"
@@ -64,7 +64,7 @@
 	{
 		"product": "Figurine Hunter ThreeA",
 		"price": "169.90€",
-		"ref": "67294",
+		"ref": "9",
 		"desc": "Figurine haut de gamme d'Hunter ThreeA",
 		"type": "topTendance",
     "img": "assets/img/hunter.jpg"
@@ -72,7 +72,7 @@
 	{
 		"product": "Figurine Aerith Gainsborough",
 		"price": "149.90€",
-		"ref": "092034",
+		"ref": "10",
 		"desc": "Magnifique figurine de Aerith Gainsborough",
 		"type": "topTendance",
     "img": "assets/img/aerith1.jpg"
@@ -80,7 +80,7 @@
 	{
 		"product": "Figurine Haruna Good Smile Company",
 		"price": "117.90€",
-		"ref": "319750",
+		"ref": "11",
 		"desc": "Une figurine haut de gamme de la magnifique Haruna",
 		"type": "topTendance",
     "img": "assets/img/haruna.jpg"
@@ -88,14 +88,14 @@
 	{
 		"product": "Figurine haut de gamme de Superman",
 		"price": "2779.99€",
-		"ref": "insane",
+		"ref": "24",
 		"desc":"Incroyable figurine de Superman, très haut de gamme",
 		"type": "topTendance"
 	},
 	{
 		"product": "Figurine POP Groot",
 		"price": "9.29€",
-		"ref": "006945",
+		"ref": "12",
 		"desc": "Très belle figurine pop de Groot",
 		"type": "pop",
     "img": "assets/img/groot.jpg"
@@ -103,7 +103,7 @@
 	{
 		"product": "Figurine POP Harry Potter",
 		"price": "9.99€",
-		"ref": "113645",
+		"ref": "13",
 		"desc": "Très belle figurine pop d'Harry Potter",
 		"type": "pop",
     "img": "assets/img/Harry.jpg"
@@ -111,7 +111,7 @@
 	{
 		"product": "Figurine POP One punch man",
 		"price": "13.23€",
-		"ref": "669745",
+		"ref": "14",
 		"desc": "Magnifique figurine du mythique one shotter",
 		"type": "pop",
     "img": "assets/img/onePunchMan.jpg"
@@ -119,7 +119,7 @@
 	{
 		"product": "Figurine POP Kratos de God of War",
 		"price": "9.67€",
-		"ref": "997462",
+		"ref": "15",
 		"desc": "Sublime figurine pop du dieu de la guerre Kratos",
 		"type": "pop",
     "img": "assets/img/kratos.jpeg"
@@ -127,7 +127,7 @@
 	{
 		"product": "Figurine POP Kakashi de Naruto",
 		"price": "19.27€",
-		"ref": "559745",
+		"ref": "16",
 		"desc": "Magnifique figurine POP du fameux Kakashi dans Naruto",
 		"type": "pop",
     "img": "assets/img/kakashi.jpg"
@@ -135,13 +135,13 @@
 	{
 		"product": "Figurine POP Emmanuel Macron",
 		"price": "13.37€",
-		"ref": "president",
+		"ref": "17",
 		"desc": "HEY MANU",
 		"type": "Pop"
 	}, {
 		"product": "Figurine MARVEL de Black Panther",
 		"price": "14.99€",
-		"ref": "494513",
+		"ref": "18",
 		"desc": "Cette figurine de Black Panther d'une hauteur de 30cm vous fera vibrer !",
 		"type": "Marvel",
     "img": "assets/img/blackPanther.jpg"
@@ -149,7 +149,7 @@
 	{
 		"product": "Figurine MARVEL Thor",
 		"price": "45.00€",
-		"ref": "za484q",
+		"ref": "19",
 		"desc": "Cette magnifique figurine de Thor d'une hauteur 25cm ira à ravir sur votre bureau !",
 		"type": "marvel",
     "img": "assets/img/thor.jpg"
@@ -157,7 +157,7 @@
 	{
 		"product": "Figurine MARVEL Iron Man",
 		"price": "24.90€",
-		"ref": "336323",
+		"ref": "20",
 		"desc": "Figurine d'Iron man",
 		"type": "marvel",
     "img": "assets/img/ironMan.jpg"
@@ -165,7 +165,7 @@
 	{
 		"product": "Figurine MARVEL Hulk",
 		"price": "19.99€",
-		"ref": "TY5642",
+		"ref": "21",
 		"desc": "Figurine HULK",
 		"type": "marvel",
     "img": "assets/img/hulk.jpg"
@@ -173,14 +173,14 @@
 	{
 		"product": "Figurine MARVEL Captain Falcon",
 		"price": "34.64€",
-		"ref": "OUI975",
+		"ref": "22",
 		"desc": "Figurine de Captain Falcon",
 		"type": "Marvel"
 	},
 	{
 		"product": "Figurine MARVEL Rocket",
 		"price": "20.45€",
-		"ref": "123456",
+		"ref": "23",
 		"desc": "Figurine de rocket",
 		"type": "marvel",
     "img": "assets/img/capitaineFalcon.jpg"
