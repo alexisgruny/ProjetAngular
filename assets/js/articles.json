@@ -136,7 +136,7 @@
 	},
 	{
 		"product": "Figurine POP  Mickey",
-		"price": "13.37€",
+		"price": 13.37,
 		"ref": "president",
 		"desc": "Sublime figurine pop de Mickey",
 		"type": "pop",
@@ -191,7 +191,7 @@
 	},
 	{
 	"product": "Figurine Mickael",
-	"price": "20.45€",
+	"price": 20.45,
 	"ref": "123456",
 	"desc": "Figurine de Mickael",
 	"type": "vente1",

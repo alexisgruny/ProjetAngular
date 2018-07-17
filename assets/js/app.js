@@ -12,12 +12,16 @@ items.controller('contentCtrl',['$scope', '$http', function( $scope, $http) {
   $http.get('assets/js/articles.json')
   .then(function(res) {
   $scope.articles = res.data;
-
   });
   $scope.sendArticles = function(index) {
     $scope.basket.push($scope.articles[index]);
+    $scope.prixTotal = 0;
     for(var key in $scope.basket){
     $scope.prixTotal += $scope.basket[key].price;
   }
+  }
+  $scope.deletArticles = function(index) {
+    $scope.basket.splice(index, 1);
+    $scope.prixTotal -= $scope.basket[index].price;
   }
 }]);
