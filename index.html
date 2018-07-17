@@ -41,7 +41,7 @@
         </li>
       </ul>
     </div>
-    <button type="button" class="btn btn-secondary btn-lg fas fa-shopping-cart" onclick="modale()"></button>
+    <button type="button" onclick="modale()" class="btn btn-secondary btn-lg fas fa-shopping-cart"></button>
 
   </nav><!--Fin de la navbar-->
 
@@ -61,7 +61,7 @@
       <div class="row" ng-repeat="cart in basket track by $index">
         <div class="col-md-2 offset-1">{{cart.product}}</div>
         <div class="col-md-2">{{cart.desc}}</div>
-        <div class="col-md-2">{{cart.price | number : 2}}€<input type="number" ng-model="quantite" ng-required="true" value="1" min="1"></div>
+        <div class="col-md-2">{{cart.price | number : 2}}€</div>
         <div class="col-md-2">{{prixTotal | number : 2}}€</div>
         <button type="button" ng-click="deletArticles($index)">Retirer du panier</button>
       </div>
@@ -71,13 +71,13 @@
 
   <!--Promo-->
   <div class="container-fluid">
-    <div id="promo" class="row justify-content-center">
-      <div id="promo1" class="col-md-3 p-3" ng-repeat="article in articles" ng-if="article.type == 'vente1'">
+    <div id="promo"class="row justify-content-center">
+      <div id="promo1" class="col-md-3 p-3" ng-repeat="(index, article) in articles" ng-if="article.type == 'vente1'">
         <img class="cardImg border border-warning" src="{{article.img}}" height="350" />
-        <h3>{{article.price | number : 2}}€</h3>
+        <h3>{{article.price}}</h3>
         <h4>{{article.product}}</h4>
         <p>{{article.desc}}</p>
-        <button type="button" data-id="1" ng-click="sendArticles($index)" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-warning font-weight-bold w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
 
@@ -86,24 +86,24 @@
 
     <h2 class="row justify-content-center">Top tendance</h2>
     <div class="row justify-content-center">
-      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'topTendance'">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'topTendance'">
         <img class="cardImg" src="{{article.img}}" height="250"/>
-        <h3>{{article.price | number : 2}}€</h3>
+        <h3>{{article.price}}</h3>
         <h4>{{article.product}}</h4>
         <p>{{article.desc}}</p>
-        <button type="button" data-id="2" ng-click="sendArticles($index)" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-success w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
 
     <!-- Japonaise -->
     <h2 class="row justify-content-center">Japonais</h2>
     <div class="row justify-content-center">
-      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'weeb'">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'weeb'">
         <img class="cardImg" src="{{article.img}}" height="250"/>
-        <h3>{{article.price | number : 2}}€</h3>
+        <h3>{{article.price}}</h3>
         <h4>{{article.product}}</h4>
         <p>{{article.desc}}</p>
-        <button type="button" data-id="3" ng-click="sendArticles($index)" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-secondary w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
 
@@ -113,26 +113,30 @@
 
     <h2 class="row justify-content-center">Marvel</h2>
     <div class="row justify-content-center">
-      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'marvel'">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'marvel'">
         <img class="cardImg" src="{{article.img}}" height="250"/>
-        <h3>{{article.price | number : 2}}€</h3>
+        <h3>{{article.price}}</h3>
         <h4>{{article.product}}</h4>
         <p>{{article.desc}}</p>
-        <button type="button" data-id="4" ng-click="sendArticles($index)" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-info w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
 
 
     <h2 class="row justify-content-center">Pop</h2>
     <div class="row justify-content-center">
-      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="article in articles" ng-if="article.type == 'pop'">
+      <div class="col-md-3 shadow p-3 m-3 bg-white rounded" ng-repeat="(index, article) in articles" ng-if="article.type == 'pop'">
         <img class="cardImg" src="{{article.img}}" height="250"/>
-        <h3>{{article.price | number : 2}}€</h3>
+        <h3>{{article.price}}</h3>
         <h4>{{article.product}}</h4>
         <p>{{article.desc}}</p>
-        <button type="button" data-id="5" ng-click="sendArticles($index)" class="add-to-cart btn btn-outline-success w-100">AJOUTER AU PANIER</button>
+        <button type="button" ng-click="sendArticles(index)" data-id="{{article.ref}}" data-name="{{article.product}}" data-price="{{article.price}}" class="add-to-cart btn btn-dark w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
+
+  </div>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/app.js"></script>
 
   </div>
   <script src="assets/js/modal.js"></script>
